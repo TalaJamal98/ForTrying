@@ -153,8 +153,8 @@
         android:layout_below="@id/sp2"
         android:layout_marginTop="10dp"
         android:background="@drawable/whitePanel"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
 
 
 
@@ -180,7 +180,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
            android:layout_marginTop="30dp"
-            android:layout_marginLeft="25dp"
+            android:layout_marginLeft="30dp"
             android:src="@drawable/logo"
 
             ></ImageView>
@@ -252,7 +252,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/sp3"
             android:src="@drawable/like"
-            android:layout_marginLeft="10"
+            android:layout_marginLeft="30dp"
             android:background="@drawable/transparent"
             />
         <ImageButton
@@ -271,7 +271,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/sp3"
             android:src="@drawable/expand"
-            android:layout_marginLeft="300dp"
+            android:layout_marginLeft="280dp"
             android:background="@drawable/transparent"
             android:layout_alignRight="@id/sp3"
             />

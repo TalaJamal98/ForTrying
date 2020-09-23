@@ -140,10 +140,40 @@
         android:layout_below="@id/bar"
         android:background="@android:color/darker_gray"/>
 
+    <LinearLayout
+        android:id="@+id/owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/sp2">
+
+        <ImageView
+            android:id="@+id/pic2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/logo"
+
+            ></ImageView>
+
+
+
+        <TextView
+            android:id="@+id/ownerName"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+          android:layout_marginLeft="10dp"
+            android:text="Ruba Badawi"
+            android:textSize="17sp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
 <LinearLayout
+    android:id="@+id/linear"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_below="@+id/sp2"
+    android:layout_below="@+id/owner"
     android:orientation="vertical">
 
 
@@ -169,14 +199,53 @@
         android:textSize="17sp" />
 
 
+
+
+
+</LinearLayout>
+
     <View
         android:id="@+id/sp3"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_below="@+id/product"
+        android:layout_below="@+id/linear"
         android:background="@android:color/darker_gray"/>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/sp3">
 
-</LinearLayout>
+        <ImageButton
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sp3"
+            android:src="@drawable/like"
+            android:background="@drawable/transparent"
+            />
+        <ImageButton
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sp3"
+            android:src="@drawable/comment"
+            android:background="@drawable/transparent"
+            android:layout_toRightOf="@id/like"
+            />
+
+        <ImageButton
+            android:id="@+id/expand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sp3"
+            android:src="@drawable/expand"
+            android:layout_marginLeft="310dp"
+            android:background="@drawable/transparent"
+            android:layout_alignRight="@id/sp3"
+            />
+
+    </LinearLayout>
 
 </RelativeLayout>
